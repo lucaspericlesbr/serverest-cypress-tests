@@ -1,0 +1,7 @@
+{
+  "registerSuccess": "Cadastro realizado com sucesso",
+  "registerEmailExists": "Este email já está sendo usado",
+  "loginInvalid": "Email e/ou senha inválidos",
+  "addedToList": "produto adicionado",
+  "listEmpty": "Seu carrinho está vazio"
+}
