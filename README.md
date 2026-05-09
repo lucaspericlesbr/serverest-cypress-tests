@@ -106,6 +106,10 @@ A cada execução, um relatório completo é gerado em `cypress/reports/index.ht
 
 Como o relatório usa `inlineAssets: true` e `embeddedScreenshots: true`, **o `index.html` é autossuficiente** — pode ser compartilhado isoladamente por e-mail ou anexo, sem depender de pastas auxiliares.
 
+<img width="1888" height="889" alt="gif-relatorio" src="https://github.com/user-attachments/assets/146850e2-4393-486c-b65b-563183256d9c" />
+
+
+
 ```bash
 npm run cy:run        # gera o relatório
 npm run report:open   # abre no navegador
