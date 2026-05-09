@@ -8,5 +8,4 @@ export const buildUser = (overrides = {}) => ({
   ...overrides,
 });
 
-export const buildAdmin = (overrides = {}) =>
-  buildUser({ administrador: 'true', ...overrides });
+export const buildAdmin = (overrides = {}) => buildUser({ administrador: 'true', ...overrides });

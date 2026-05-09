@@ -81,9 +81,7 @@ describe('Frontend | Fluxo de compra', () => {
       ListPage.expectUrlIsList();
 
       // Espera-se 1 item agrupado com quantidade 2
-      ListPage.expectItemsCount(1)
-        .expectProductInList(produto.nome)
-        .expectProductQuantity(2);
+      ListPage.expectItemsCount(1).expectProductInList(produto.nome).expectProductQuantity(2);
     });
   });
 

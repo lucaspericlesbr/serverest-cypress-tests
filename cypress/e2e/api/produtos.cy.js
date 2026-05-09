@@ -82,9 +82,7 @@ describe('API | Produtos', () => {
         failOnStatusCode: false,
       }).then(({ status, body }) => {
         expect(status).to.eq(401);
-        expect(body)
-          .to.have.property('message')
-          .that.includes('Token de acesso ausente');
+        expect(body).to.have.property('message').that.includes('Token de acesso ausente');
       });
     });
 
@@ -97,9 +95,7 @@ describe('API | Produtos', () => {
         failOnStatusCode: false,
       }).then(({ status, body }) => {
         expect(status).to.eq(403);
-        expect(body)
-          .to.have.property('message')
-          .that.includes('administradores');
+        expect(body).to.have.property('message').that.includes('administradores');
       });
     });
   });

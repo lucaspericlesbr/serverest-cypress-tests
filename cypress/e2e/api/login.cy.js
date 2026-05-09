@@ -27,7 +27,10 @@ describe('API | Login', () => {
       }).then(({ status, body }) => {
         expect(status).to.eq(200);
         expect(body).to.have.property('message', 'Login realizado com sucesso');
-        expect(body).to.have.property('authorization').that.is.a('string').and.match(/^Bearer /);
+        expect(body)
+          .to.have.property('authorization')
+          .that.is.a('string')
+          .and.match(/^Bearer /);
       });
     });
   });
