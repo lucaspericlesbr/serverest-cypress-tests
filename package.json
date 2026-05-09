@@ -1,0 +1,39 @@
+{
+  "name": "serverest-cypress-tests",
+  "version": "1.0.0",
+  "description": "Testes E2E automatizados (frontend e API) para a aplicação ServeRest, utilizando Cypress.",
+  "private": true,
+  "scripts": {
+    "cy:open": "cross-env CYPRESS_CACHE_FOLDER=./.cypress-cache cypress open",
+    "cy:run": "cross-env CYPRESS_CACHE_FOLDER=./.cypress-cache cypress run",
+    "test:frontend": "cross-env CYPRESS_CACHE_FOLDER=./.cypress-cache cypress run --spec \"cypress/e2e/frontend/**/*.cy.js\"",
+    "test:api": "cross-env CYPRESS_CACHE_FOLDER=./.cypress-cache cypress run --spec \"cypress/e2e/api/**/*.cy.js\"",
+    "report:open": "start cypress/reports/index.html",
+    "lint": "eslint \"cypress/**/*.js\"",
+    "lint:fix": "eslint \"cypress/**/*.js\" --fix",
+    "format": "prettier --write \"cypress/**/*.{js,json}\""
+  },
+  "keywords": [
+    "cypress",
+    "e2e",
+    "serverest",
+    "qa",
+    "automation"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@faker-js/faker": "^10.4.0",
+    "cross-env": "^10.1.0",
+    "cypress": "^15.14.2",
+    "cypress-mochawesome-reporter": "^4.0.2",
+    "cypress-plugin-api": "^2.11.2",
+    "eslint": "^10.3.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-cypress": "^6.4.1",
+    "globals": "^17.6.0",
+    "prettier": "^3.8.3"
+  }
+}

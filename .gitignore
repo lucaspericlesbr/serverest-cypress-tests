@@ -1,0 +1,29 @@
+node_modules/
+
+# Cache local do binário do Cypress (workaround para Windows Defender)
+.cypress-cache/
+
+# Artefatos de execução do Cypress
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
+cypress/reports/
+
+cypress.env.json
+
+.env
+.env.local
+.env.*.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+.DS_Store
+Thumbs.db
+
+.idea/
+.vscode/
+!.vscode/settings.example.json
+
+*.log
